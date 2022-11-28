@@ -6,6 +6,10 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+
+set(FFP_LIB "ffp_lib")
+set(FFP_EXECUTABLE "ffp")
+
 option(ENABLE_TESTING "check if tests are enabled or not" ON)
 
 
@@ -22,12 +26,6 @@ FetchContent_MakeAvailable(Catch2)
 
 
 add_subdirectory(tests)
-
-
-include_directories("./includes")
-add_library(fasta_toolkit STATIC src/FileIO.cpp src/Protein.cpp)
-
-add_executable(run_app src/main.cpp)
-
-target_link_libraries(run_app PUBLIC fasta_toolkit Catch2::Catch2WithMain)
+add_subdirectory(app)
+add_subdirectory(src)
 

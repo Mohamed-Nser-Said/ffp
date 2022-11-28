@@ -29,6 +29,8 @@ int main(int argc, char** argv){
     // close the original *.fasta file
     fasta_file.close();
 
+    
+
 
     // creating protein csv file
     FileIO::writeProteinsCSV(PROTEIN_CSV_FILENAME, all_seq);
