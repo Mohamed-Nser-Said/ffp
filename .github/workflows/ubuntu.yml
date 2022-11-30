@@ -31,4 +31,4 @@ jobs:
       run: |
         cd build
         cd tests
-        ./unit_tests
+        ./unit_test
