@@ -18,7 +18,7 @@ TEST_CASE( "ProteinsSequences are computed", "[ProteinsSequence]" ) {
 
     REQUIRE( protein_seq_1.PROTEIN_ID == 1 );
     REQUIRE( protein_seq_1.PROTEIN_IDENTIFIER == "PROT1" );
-    REQUIRE( protein_seq_1.peptides[0].PROTEIN_ID == 2 );
+    REQUIRE( protein_seq_1.peptides[0].PROTEIN_ID == 1 );
 
 //     test peptide sequences in protein 1
     REQUIRE( protein_seq_1.peptides[0].PEPTIDE_SEQUENCE == "MTEITAAMVK");
