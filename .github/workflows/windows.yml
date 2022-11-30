@@ -29,4 +29,4 @@ jobs:
         cd build
         cd tests
         cd Debug
-        .\unit_tests.exe
+        .\unit_test.exe
