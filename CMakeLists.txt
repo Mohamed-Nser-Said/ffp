@@ -28,6 +28,6 @@ FetchContent_MakeAvailable(Catch2)
 
 add_subdirectory(tests)
 add_subdirectory(src)
-add_subdirectory(app)
+add_subdirectory(example)
 
 
