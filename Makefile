@@ -9,8 +9,3 @@ b:
 	cmake . -B ./build
 	cmake --build ./build
 
-run_app:
-	./build/app/debug/Executable.exe
-
-test:
-	./build/debug/ffp.exe

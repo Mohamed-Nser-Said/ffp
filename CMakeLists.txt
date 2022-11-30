@@ -7,7 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 
-set(FFP_LIB "ffp_lib")
+set(FileIO_Lib "FileIO_Lib")
+set(Protein_Lib "Protein_Lib")
 set(FFP_EXECUTABLE "ffp")
 
 option(ENABLE_TESTING "check if tests are enabled or not" ON)
@@ -26,6 +27,7 @@ FetchContent_MakeAvailable(Catch2)
 
 
 add_subdirectory(tests)
-add_subdirectory(app)
 add_subdirectory(src)
+add_subdirectory(app)
+
 

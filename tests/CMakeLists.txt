@@ -5,6 +5,6 @@ if(ENABLE_TESTING)
 
     include_directories(${PROJECT_SOURCE_DIR}/includes)
     add_executable(${TEST_MAIN} ${TEST_SOURCES})
-    target_link_libraries(${TEST_MAIN} PUBLIC ${FFP_LIB} Catch2::Catch2WithMain)
+    target_link_libraries(${TEST_MAIN} PUBLIC ${Protein_Lib} Catch2::Catch2WithMain)
 
 endif()

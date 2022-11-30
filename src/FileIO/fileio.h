@@ -1,10 +1,9 @@
-#ifndef FILEIO_H
-#define FILEIO_H
+#pragma FILEIO_H
 
 #include <vector>
-#include "Protein.h"
 #include <iostream>
 #include <fstream>
+#include <Protein.h>
 
 using namespace std;
 
@@ -24,5 +23,3 @@ public:
 
 
 
-
-#endif //FILEIO_H

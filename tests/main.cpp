@@ -5,8 +5,7 @@
 #include <string>
 #include <regex>
 
-#include "fileio.h"
-#include "Protein.h"
+#include <Protein.h>
 
 
 TEST_CASE( "ProteinsSequences are computed", "[ProteinsSequence]" ) {

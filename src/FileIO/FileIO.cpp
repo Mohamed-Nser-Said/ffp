@@ -2,6 +2,7 @@
 #include<iostream>
 #include <vector>
 #include <regex>
+#include <Protein.h>
 
 inline void clean(string& str){
     for(auto &s: str ){
