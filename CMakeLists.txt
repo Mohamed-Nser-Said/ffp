@@ -10,11 +10,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(FileIO_Lib "FileIO_Lib")
 set(Protein_Lib "Protein_Lib")
 set(FFP_EXECUTABLE "ffp")
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 
 option(ENABLE_TESTING "check if tests are enabled or not" ON)
 
 
-
+include(Docs)
 Include(FetchContent)
 
 FetchContent_Declare(

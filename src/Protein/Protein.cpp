@@ -19,6 +19,13 @@ using namespace std;
 //- The maximum length of a peptide sequence(y =< 30).
 
 void ProteinsSequence::split_peptides(){
+/**
+* @brief splits the string input of Fasta file into Protein sequences
+*
+* @param void
+*
+* @return void
+*/
 
     string pattern("([^RK]{7,29}?[KR])"), prefix;
     regex r(pattern, regex::ECMAScript);

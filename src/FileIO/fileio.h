@@ -8,6 +8,10 @@
 using namespace std;
 
 class FileIO{
+/**
+ * @brief FileIO handles the input and output files format including CSV FASTA files.
+ *
+ */
 public:
     static vector<ProteinsSequence> getProteinSequence(ifstream& fasta_file_stream);
 

@@ -31,6 +31,13 @@ public:
             PROTEIN_ID(PROTEIN_ID),
             PROTEIN_IDENTIFIER(std::move((PROTEIN_IDENTIFIER))),
             PROTEIN_SEQUENCE(std::move(PROTEIN_SEQUENCE)){
+        /**
+* @brief protein object constructor
+*
+* @param const uint32_t PROTEIN_ID; const string  PROTEIN_IDENTIFIER; const string PROTEIN_SEQUENCE;
+*
+* @return void
+*/
         this->split_peptides();
 
     }
