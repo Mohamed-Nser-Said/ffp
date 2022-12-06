@@ -4,6 +4,17 @@
 #include <regex>
 #include <Protein.h>
 
+
+inline void util::log_info(string_view mes) {
+
+    cout<<"[ info ] [] "<<mes<<endl;
+
+
+}
+
+
+
+
 inline void clean(string& str){
     for(auto &s: str ){
         if(s==','){
@@ -84,6 +95,7 @@ ifstream FileIO::openFastaFile(const string& file_path){
         exit(-1);
     }}
 
+
 bool FileIO::writeProteinsCSV(const string& filename, const vector<ProteinsSequence>& data){
     /**
 * @brief write the protein sequences as csv file
@@ -94,7 +106,8 @@ bool FileIO::writeProteinsCSV(const string& filename, const vector<ProteinsSeque
 */
     auto file = ofstream(filename);
     if(file.good()){
-        cout<<"started -- writing "<<filename<<endl;
+
+        util::log_info("writing to csv started");
 
         file<<"PROTEIN_ID, PROTEIN_SEQUENCE, PROTEIN_IDENTIFIER"<<endl;
         for (const auto& seq: data) {

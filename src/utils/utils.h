@@ -7,6 +7,18 @@
 
 using namespace std;
 
+
+namespace util{
+
+    inline void log_info(string_view mes);
+
+
+
+}
+
+
+
+
 namespace FileIO {
 /**
  * @brief FileIO handles the input and output files format including CSV FASTA files.

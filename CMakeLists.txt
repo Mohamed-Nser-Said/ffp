@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 
-set(FileIO_Lib "FileIO_Lib")
+set(utils "utils")
 set(Protein_Lib "Protein_Lib")
 set(FFP_EXECUTABLE "ffp")
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")

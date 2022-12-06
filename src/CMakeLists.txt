@@ -1,3 +1,3 @@
 
 add_subdirectory(Protein)
-add_subdirectory(FileIO)
+add_subdirectory(utils)
