@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['openfastafile_34',['openFastaFile',['../namespaceFileIO.html#afdb73877e81280077836394f6d9ea5d4',1,'FileIO']]]
+  ['log_5finfo_37',['log_info',['../namespaceutil.html#ac677ae815a9cc29f26a1d67d94ff83fc',1,'util']]]
 ];

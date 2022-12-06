@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['split_5fpeptides_36',['split_peptides',['../classProteinsSequence.html#a8330b0dcaf757c64f0d57eb2b25a9555',1,'ProteinsSequence']]]
+  ['proteinssequence_39',['ProteinsSequence',['../classProteinsSequence.html#a3bfdc4890bb874d88887dd9e5ed0eb2f',1,'ProteinsSequence']]]
 ];

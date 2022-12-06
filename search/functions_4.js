@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['proteinssequence_35',['ProteinsSequence',['../classProteinsSequence.html#a3bfdc4890bb874d88887dd9e5ed0eb2f',1,'ProteinsSequence']]]
+  ['openfastafile_38',['openFastaFile',['../namespaceFileIO.html#afdb73877e81280077836394f6d9ea5d4',1,'FileIO']]]
 ];
