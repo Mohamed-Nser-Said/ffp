@@ -4,16 +4,16 @@
 #include <vector>
 #include <string>
 #include <cstdint>
-#include "fileio.h"
+#include "utils.h"
 
 
 int main(){
 
-    string FASTA_FILE_PATH="PATH/input.fasta" ;
+    string FASTA_FILE_PATH="C:/Users/abuai/Desktop/root/devnv/projects/ffp/data/input.fasta" ;
 
-    string PROTEIN_CSV_FILENAME = "/proteins.csv" ;
-    string PEPTIDE_CSV_FILENAME = "/data/peptides.csv";
-    string MAPPINGS_CSV_FILENAME = "/data/mappings.csv";
+    string PROTEIN_CSV_FILENAME = "C:/Users/abuai/Desktop/root/devnv/projects/ffp/data/proteins.csv" ;
+    string PEPTIDE_CSV_FILENAME = "C:/Users/abuai/Desktop/root/devnv/projects/ffp/data/peptides.csv";
+    string MAPPINGS_CSV_FILENAME = "C:/Users/abuai/Desktop/root/devnv/projects/ffp/data/mappings.csv";
 
     // open the fasta file, if the file was not found, the program will terminate
     ifstream fasta_file = FileIO::openFastaFile(FASTA_FILE_PATH);

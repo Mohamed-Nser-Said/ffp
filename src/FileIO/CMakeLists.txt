@@ -1,4 +1,4 @@
-add_library(${FileIO_Lib} STATIC FileIO.cpp fileio.h)
+add_library(${FileIO_Lib} STATIC utils.cpp utils.h)
 
 
 

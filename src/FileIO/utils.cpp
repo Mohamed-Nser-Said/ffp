@@ -1,4 +1,4 @@
-#include "fileio.h"
+#include "utils.h"
 #include<iostream>
 #include <vector>
 #include <regex>
@@ -125,7 +125,7 @@ bool FileIO::writePeptidesCSV(const string& filename, const vector<ProteinsSeque
 */
     auto file = ofstream(filename);
     if(file.good()){
-        cout<<"started -- writing "<<filename<<endl;
+        cout<<"[started] -- writing "<<filename<<endl;
 
         file<<"PEPTIDE_ID, PEPTIDE_SEQUENCE"<<endl;
         int index=0;
