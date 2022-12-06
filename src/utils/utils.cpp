@@ -2,17 +2,27 @@
 #include<iostream>
 #include <vector>
 #include <regex>
+#include <chrono>
 #include <Protein.h>
+#include <iostream>
+#include <string>
+#include <string_view>
+#include <format>
 
 
-inline void util::log_info(string_view mes) {
 
-    cout<<"[ info ] [] "<<mes<<endl;
+inline void util::log_info(std::string_view mes, LogType t) {
 
+
+    std::cout<<
+    std::format("{}[{}][{}]\t{}",
+                std::string(120, '-'),
+                t==LogType::Info ? "info": "warning",
+                std::format("{:%H:%M}", std::chrono::system_clock::now()),
+                mes)
+                <<std::endl;
 
 }
-
-
 
 
 inline void clean(string& str){
@@ -78,23 +88,19 @@ ifstream FileIO::openFastaFile(const string& file_path){
  */
     auto file = ifstream (file_path);
 
-//        checking the Condition state of the file
     if(file.fail()) {
-
-        cerr<<"Error: "<<__FILE__<<": in function "<<__FUNCTION__ <<" at line "<<__LINE__<<endl
-            <<"The fasta file '"<<file_path<<"' Was not Found!, Please check your *.fasta file name or file location"<<endl;
+        std::cerr<<
+        std::format(
+                "Error: in file: '{}', in function: '{}' at line:{}\n\nCould not open the file '{}'\nPlease check your *.fasta file name or file location",
+                __FILE__, __FUNCTION__, __LINE__, file_path)<<std::endl;
 
         exit(-1);
 
     }else if(file.good()) {
-//            return the ifstream if the file opened correctly
+           log_info( std::format("opening file '{}'", file_path), util::LogType::Info);
         return file;
     }
-    else {
-        cerr<<"Error: "<<__FILE__<<": in function "<<__FUNCTION__ <<" at line "<<__LINE__<<endl;
-        exit(-1);
-    }}
-
+    }
 
 bool FileIO::writeProteinsCSV(const string& filename, const vector<ProteinsSequence>& data){
     /**
@@ -107,7 +113,6 @@ bool FileIO::writeProteinsCSV(const string& filename, const vector<ProteinsSeque
     auto file = ofstream(filename);
     if(file.good()){
 
-        util::log_info("writing to csv started");
 
         file<<"PROTEIN_ID, PROTEIN_SEQUENCE, PROTEIN_IDENTIFIER"<<endl;
         for (const auto& seq: data) {
@@ -116,13 +121,14 @@ bool FileIO::writeProteinsCSV(const string& filename, const vector<ProteinsSeque
         }
 
         file.close();
-        cout<<"Done"<<endl;
+        util::log_info( std::format("Writing to file '{}' finished", filename), util::LogType::Info);
 
         return true;
     }else{
-        cerr<<"Error: "<<__FILE__<<": in function "<<__FUNCTION__ <<" at line "<<__LINE__<<endl;
+        std::cerr<<std::format("Error: in file '{}' : in function '{}'  at line {}\n\nCould not open the file '{}'\n{}",
+                               __FILE__, __FUNCTION__, __LINE__, filename, std::string(120, '-'))<<std::endl;
+        return false;
 
-        exit(-1);
     }
 
 
@@ -138,7 +144,6 @@ bool FileIO::writePeptidesCSV(const string& filename, const vector<ProteinsSeque
 */
     auto file = ofstream(filename);
     if(file.good()){
-        cout<<"[started] -- writing "<<filename<<endl;
 
         file<<"PEPTIDE_ID, PEPTIDE_SEQUENCE"<<endl;
         int index=0;
@@ -151,13 +156,13 @@ bool FileIO::writePeptidesCSV(const string& filename, const vector<ProteinsSeque
 
 
         file.close();
-        cout<<"Done !"<<endl;
+        util::log_info( std::format("Writing to file '{}' finished", filename), util::LogType::Info);
 
         return true;
     }else{
-        cerr<<"Error: "<<__FILE__<<": in function "<<__FUNCTION__ <<" at line "<<__LINE__<<endl;
-
-        exit(-1);
+        std::cerr<<std::format("Error: in file '{}' : in function '{}'  at line {}\n\nCould not open the file '{}'\n{}",
+                               __FILE__, __FUNCTION__, __LINE__, filename, std::string(120, '-'))<<std::endl;
+        return false;
     }
 
 
@@ -173,7 +178,6 @@ bool FileIO::writeMappingsCSV(const string& filename, const vector<ProteinsSeque
 */
     auto file = ofstream(filename);
     if(file.good()){
-        cout<<"started -- writing "<<filename<<endl;
 
         file<<"MAPPING_ID, PEPTIDE_ID, PROTEIN_ID, START_IDX, END_IDX"<<endl;
         int index=1;
@@ -185,15 +189,14 @@ bool FileIO::writeMappingsCSV(const string& filename, const vector<ProteinsSeque
             }
         }
 
-
         file.close();
-        cout<<"Done !"<<endl;
+        util::log_info( std::format("Writing to file '{}' finished", filename), util::LogType::Info);
 
         return true;
     }else{
-        cerr<<"Error: "<<__FILE__<<": in function "<<__FUNCTION__ <<" at line "<<__LINE__<<endl;
-
-        exit(-1);
+        std::cerr<<std::format("Error: in file '{}' : in function '{}'  at line {}\n\nCould not open the file '{}'\n{}",
+                               __FILE__, __FUNCTION__, __LINE__, filename, std::string(120, '-'))<<std::endl;
+        return false;
     }
 
 

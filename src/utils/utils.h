@@ -5,13 +5,13 @@
 #include <fstream>
 #include <Protein.h>
 
-using namespace std;
-
 
 namespace util{
+    enum class LogType{
+        Info, Error, Warning
+    };
 
-    inline void log_info(string_view mes);
-
+    inline void log_info(std::string_view mes, LogType t);
 
 
 }
@@ -26,16 +26,15 @@ namespace FileIO {
  */
 
 
-vector<ProteinsSequence> getProteinSequence(ifstream& fasta_file_stream);
+std::vector<ProteinsSequence> getProteinSequence(std::ifstream& fasta_file_stream);
 
+std::ifstream openFastaFile(const std::string& file_path);
 
-ifstream openFastaFile(const string& file_path);
+bool writeProteinsCSV(const std::string& filename, const std::vector<ProteinsSequence>& data);
 
-bool writeProteinsCSV(const string& filename, const vector<ProteinsSequence>& data);
+bool writePeptidesCSV(const std::string& filename, const std::vector<ProteinsSequence>& data);
 
-bool writePeptidesCSV(const string& filename, const vector<ProteinsSequence>& data);
-
-bool writeMappingsCSV(const string& filename, const vector<ProteinsSequence>& data);
+bool writeMappingsCSV(const std::string& filename, const std::vector<ProteinsSequence>& data);
 
 }
 

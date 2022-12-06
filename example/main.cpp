@@ -9,7 +9,7 @@
 
 int main(){
 
-    const auto FASTA_FILE_PATH = std::string{"C:/Users/abuai/Desktop/root/devnv/projects/ffp/data/input.fasta"} ;
+    const auto FASTA_FILE_PATH = std::string{"C:/Users/abuai/Desktop/root/devnnv/projects/ffp/data/input.fasta"} ;
     const auto PROTEIN_CSV_FILENAME = std::string{ "C:/Users/abuai/Desktop/root/devnv/projects/ffp/data/proteins.csv"} ;
     const auto PEPTIDE_CSV_FILENAME = std::string{ "C:/Users/abuai/Desktop/root/devnv/projects/ffp/data/peptides.csv"};
     const auto MAPPINGS_CSV_FILENAME = std::string{ "C:/Users/abuai/Desktop/root/devnv/projects/ffp/data/mappings.csv"};
