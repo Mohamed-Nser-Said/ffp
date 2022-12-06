@@ -5,8 +5,8 @@ digraph "/home/runner/work/ffp/ffp/src" {
   subgraph clusterdir_68267d1309a1af8e8297ef4c3efbcdba {
     graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_68267d1309a1af8e8297ef4c3efbcdba.html"];
     dir_68267d1309a1af8e8297ef4c3efbcdba [shape=plaintext label="src"];
-    dir_c0a4e14084e9f7c16bbb9096e2bb1bfb [shape=box label="FileIO" color="black" fillcolor="white" style="filled" URL="dir_c0a4e14084e9f7c16bbb9096e2bb1bfb.html"];
-    dir_32797135fe23c5eec817d4836231640f [shape=box label="Protein" color="black" fillcolor="white" style="filled" URL="dir_32797135fe23c5eec817d4836231640f.html"];
+  dir_c0a4e14084e9f7c16bbb9096e2bb1bfb [shape=box label="FileIO" fillcolor="white" style="filled" URL="dir_c0a4e14084e9f7c16bbb9096e2bb1bfb.html"];
+  dir_32797135fe23c5eec817d4836231640f [shape=box label="Protein" fillcolor="white" style="filled" URL="dir_32797135fe23c5eec817d4836231640f.html"];
   }
   dir_c0a4e14084e9f7c16bbb9096e2bb1bfb->dir_32797135fe23c5eec817d4836231640f [headlabel="2", labeldistance=1.5 headhref="dir_000001_000002.html"];
 }

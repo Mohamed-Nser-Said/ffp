@@ -1,27 +1,30 @@
 var indexSectionsWithContent =
 {
-  0: "acefgopsw",
-  1: "fp",
-  2: "cfp",
-  3: "acgopsw",
-  4: "eps"
+  0: "acefgopsuw",
+  1: "p",
+  2: "f",
+  3: "cpu",
+  4: "acgopsw",
+  5: "eps"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "files",
-  3: "functions",
-  4: "variables"
+  2: "namespaces",
+  3: "files",
+  4: "functions",
+  5: "variables"
 };
 
 var indexSectionLabels =
 {
   0: "All",
   1: "Classes",
-  2: "Files",
-  3: "Functions",
-  4: "Variables"
+  2: "Namespaces",
+  3: "Files",
+  4: "Functions",
+  5: "Variables"
 };
 
