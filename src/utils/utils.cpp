@@ -35,13 +35,6 @@ inline void clean(string& str){
 
 
 vector<ProteinsSequence> FileIO::getProteinSequence(ifstream& fasta_file_stream){
-/**
- * @brief takes an FASTA file input as ifstream reference.
- *
- * @param ifstream&
- *
- * @return the function return a vector of ProteinsSequence object
- */
         vector<ProteinsSequence> vectorSeq;
         vector<string> PROTEIN_SEQUENCE;
         vector<string> PROTEIN_IDENTIFIER;
@@ -79,13 +72,6 @@ vector<ProteinsSequence> FileIO::getProteinSequence(ifstream& fasta_file_stream)
     }
 
 ifstream FileIO::openFastaFile(const string& file_path){
-    /**
- * @brief takes an *.fasta file path as string reference
- *
- * @param const string&
- *
- * @return the function return a ifstream object
- */
     auto file = ifstream (file_path);
 
     if(file.fail()) {
@@ -103,13 +89,6 @@ ifstream FileIO::openFastaFile(const string& file_path){
     }
 
 bool FileIO::writeProteinsCSV(const string& filename, const vector<ProteinsSequence>& data){
-    /**
-* @brief write the protein sequences as csv file
-*
-* @param const string& file name and vector<ProteinsSequence>& data
-*
-* @return bool, true if success
-*/
     auto file = ofstream(filename);
     if(file.good()){
 
@@ -135,13 +114,7 @@ bool FileIO::writeProteinsCSV(const string& filename, const vector<ProteinsSeque
 }
 
 bool FileIO::writePeptidesCSV(const string& filename, const vector<ProteinsSequence>& data){
-/**
-* @brief write the peptides sequence as csv file
-*
-* @param const string& file name and vector<ProteinsSequence>& data
-*
-* @return bool, true if success
-*/
+
     auto file = ofstream(filename);
     if(file.good()){
 
@@ -169,13 +142,7 @@ bool FileIO::writePeptidesCSV(const string& filename, const vector<ProteinsSeque
 }
 
 bool FileIO::writeMappingsCSV(const string& filename, const vector<ProteinsSequence>& data){
-/**
-* @brief write the mapping of proteins and peptides as csv file
-*
-* @param const string& file name and vector<ProteinsSequence>& data
-*
-* @return bool, true if success
-*/
+
     auto file = ofstream(filename);
     if(file.good()){
 

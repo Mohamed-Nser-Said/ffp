@@ -8,7 +8,7 @@
 DOXYFILE_ENCODING       = UTF-8
 PROJECT_NAME            = "C++ FASTA File Processor"
 PROJECT_NUMBER          = 1.0
-PROJECT_BRIEF           =
+PROJECT_BRIEF           = "A C++ program that processes FASTA files"
 PROJECT_LOGO            =
 OUTPUT_DIRECTORY        = ./
 OUTPUT_LANGUAGE         = English
@@ -20,13 +20,13 @@ MARKDOWN_SUPPORT        = YES
 EXTRACT_ALL             = YES
 RECURSIVE               = YES
 GENERATE_HTML           = YES
+GENERATE_TREEVIEW       = YES
 GENERATE_LATEX          = NO
 
 #---------------------------------------------------------------------------
 # Configuration options related to the input files
 #---------------------------------------------------------------------------
 INPUT                  =    ../src \
-INPUT                       ../include
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          = *.c \
                          *.cc \
