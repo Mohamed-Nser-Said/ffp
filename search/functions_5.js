@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['proteinssequence_43',['ProteinsSequence',['../classProteinsSequence.html#a3bfdc4890bb874d88887dd9e5ed0eb2f',1,'ProteinsSequence']]]
+  ['proteinssequence_45',['ProteinsSequence',['../classProteinsSequence.html#a3bfdc4890bb874d88887dd9e5ed0eb2f',1,'ProteinsSequence']]]
 ];

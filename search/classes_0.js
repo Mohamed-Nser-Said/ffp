@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['peptide_29',['Peptide',['../structPeptide.html',1,'']]],
-  ['proteinssequence_30',['ProteinsSequence',['../classProteinsSequence.html',1,'']]]
+  ['peptide_30',['Peptide',['../structPeptide.html',1,'']]],
+  ['proteinssequence_31',['ProteinsSequence',['../classProteinsSequence.html',1,'']]]
 ];
