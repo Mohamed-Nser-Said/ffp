@@ -1,3 +1,3 @@
-add_executable(${FFP_EXECUTABLE} ./main.cpp)
+add_executable(${example_exe} ./main.cpp)
 
-target_link_libraries(${FFP_EXECUTABLE} PUBLIC ${utils})
+target_link_libraries(${example_exe} PUBLIC ${ffp})

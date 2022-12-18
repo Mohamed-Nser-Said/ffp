@@ -5,16 +5,16 @@
 #include <string>
 #include <regex>
 
-#include <Protein.h>
+#include <ffp.h>
 
 
 TEST_CASE( "ProteinsSequences are computed", "[ProteinsSequence]" ) {
 
-    const string sequence1 = "MTEITAAMVKELRESTGAGMMDCKNALSETNGDFDKAVQLLREKGLGKAAKKADRLAAEG";
-    const string sequence2 = "SATVSEINSETDFVAKNDQFIALTKDTTAHIQSNSLQSVEELHSSTINGVKFEEYLKSQI";
+    const std::string sequence1 = "MTEITAAMVKELRESTGAGMMDCKNALSETNGDFDKAVQLLREKGLGKAAKKADRLAAEG";
+    const std::string sequence2 = "SATVSEINSETDFVAKNDQFIALTKDTTAHIQSNSLQSVEELHSSTINGVKFEEYLKSQI";
 
-    ProteinsSequence protein_seq_1(1, "PROT1", sequence1);
-    ProteinsSequence protein_seq_2(2, "PROT2", sequence2);
+    FFP::Types::Protein protein_seq_1(1, "PROT1", sequence1);
+    FFP::Types::Protein protein_seq_2(2, "PROT2", sequence2);
 
     REQUIRE( protein_seq_1.PROTEIN_ID == 1 );
     REQUIRE( protein_seq_1.PROTEIN_IDENTIFIER == "PROT1" );
