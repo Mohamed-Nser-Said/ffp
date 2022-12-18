@@ -87,6 +87,20 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="title">C++ FASTA File Processor Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#autotoc_md0">ffp</a><ul><ul><li class="level3"><a href="#autotoc_md1">This Project Requires:</a><ul><li class="level4"><a href="#autotoc_md2">Building</a></li>
+</ul>
+</li>
+<li class="level3"><a href="#autotoc_md3">This Project features</a></li>
+</ul>
+<li class="level2"><a href="#autotoc_md4">Usage samples</a><ul><ul><li class="level4"><a href="#autotoc_md5">Basic usage</a></li>
+</ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="textblock"><h1><a class="anchor" id="autotoc_md0"></a>
 ffp</h1>
 <hr  />
@@ -129,8 +143,8 @@ Basic usage</h4>
 <div class="line">    // open the fasta file, if the file was not found, the program will terminate</div>
 <div class="line">    ifstream fasta_file = FileIO::openFastaFile(FASTA_FILE_PATH);</div>
 <div class="line"> </div>
-<div class="line">    // convert all the protein sequences in fasta file to &#39;ProteinsSequence&#39; objects and put them in a vector container</div>
-<div class="line">    vector&lt;ProteinsSequence&gt; all_seq = FileIO::getProteinSequence(fasta_file);</div>
+<div class="line">    // convert all the protein sequences in fasta file to &#39;Protein&#39; objects and put them in a vector container</div>
+<div class="line">    vector&lt;Protein&gt; all_seq = FileIO::getProteinSequence(fasta_file);</div>
 <div class="line"> </div>
 <div class="line">    // close the original *.fasta file</div>
 <div class="line">    fasta_file.close();</div>

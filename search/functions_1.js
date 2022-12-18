@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clean_41',['clean',['../utils_8cpp.html#a56720b2dc07ca06ebdf1070fa6873cc6',1,'utils.cpp']]]
+  ['getproteinsequence_44',['getProteinSequence',['../namespaceFFP.html#a3add91343ba783714666e9533fd00c4c',1,'FFP']]]
 ];

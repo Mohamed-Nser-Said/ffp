@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logtype_57',['LogType',['../namespaceutil.html#a72eb1766ec0ba1b7d19d20b19245d1e2',1,'util']]]
+  ['logtype_61',['LogType',['../namespaceFFP_1_1util.html#a4c2a34bdd9913c006086aa66238e0f31',1,'FFP::util']]]
 ];

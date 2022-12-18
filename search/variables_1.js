@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['peptide_5fsequence_51',['PEPTIDE_SEQUENCE',['../structPeptide.html#a5d6ed3c3eede35646af3dcf4239958b6',1,'Peptide']]],
-  ['peptides_52',['peptides',['../classProteinsSequence.html#ad5760f30e6b166ef8f22b4303b3c7d6d',1,'ProteinsSequence']]],
-  ['protein_5fid_53',['PROTEIN_ID',['../structPeptide.html#afe50d024adbab1763433e5544c8fa558',1,'Peptide::PROTEIN_ID()'],['../classProteinsSequence.html#a9a93b53e41fa2b241adcad249914b170',1,'ProteinsSequence::PROTEIN_ID()']]],
-  ['protein_5fidentifier_54',['PROTEIN_IDENTIFIER',['../classProteinsSequence.html#a2893b14c9d0d4ba4c9e62d5184ef6b53',1,'ProteinsSequence']]],
-  ['protein_5fsequence_55',['PROTEIN_SEQUENCE',['../classProteinsSequence.html#a47c0979365b2c11afee32ffe7d091300',1,'ProteinsSequence']]]
+  ['peptide_5fid_53',['PEPTIDE_ID',['../structFFP_1_1Types_1_1Peptide.html#ad99c5782dfd8b66bccc107799240d9fb',1,'FFP::Types::Peptide']]],
+  ['peptide_5fsequence_54',['PEPTIDE_SEQUENCE',['../structFFP_1_1Types_1_1Peptide.html#abe51191ddfed906a1c70052f271c484d',1,'FFP::Types::Peptide']]],
+  ['peptides_55',['peptides',['../classFFP_1_1Types_1_1Protein.html#ac713b9dead91ae0307c1fcd8a2bfb00d',1,'FFP::Types::Protein']]],
+  ['peptides_5fcount_56',['peptides_count',['../classFFP_1_1Types_1_1Protein.html#a076ec807ee580d77e72fd9ce21c2b7da',1,'FFP::Types::Protein']]],
+  ['protein_5fid_57',['PROTEIN_ID',['../structFFP_1_1Types_1_1Peptide.html#af77ff4163f707e8002d9981cb0266b30',1,'FFP::Types::Peptide::PROTEIN_ID()'],['../classFFP_1_1Types_1_1Protein.html#aed8709bf06309eb53bfc6d8f38c172dc',1,'FFP::Types::Protein::PROTEIN_ID()']]],
+  ['protein_5fidentifier_58',['PROTEIN_IDENTIFIER',['../classFFP_1_1Types_1_1Protein.html#ab156c1055ea5e68ad74015adeafaa0fe',1,'FFP::Types::Protein']]],
+  ['protein_5fsequence_59',['PROTEIN_SEQUENCE',['../classFFP_1_1Types_1_1Protein.html#a925b498311bad674b13464f604f57240',1,'FFP::Types::Protein']]]
 ];

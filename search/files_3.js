@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['utils_2ecpp_38',['utils.cpp',['../utils_8cpp.html',1,'']]],
-  ['utils_2eh_39',['utils.h',['../utils_8h.html',1,'']]]
+  ['protein_2ecpp_41',['Protein.cpp',['../Protein_8cpp.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getproteinsequence_42',['getProteinSequence',['../namespaceFileIO.html#a83dab1341e35b1ded1828745e37a3e4b',1,'FileIO']]]
+  ['log_5finfo_45',['log_info',['../namespaceFFP_1_1util.html#ad79846c4daa5c61129b5d3857904dad2',1,'FFP::util']]]
 ];

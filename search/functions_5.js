@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['proteinssequence_45',['ProteinsSequence',['../classProteinsSequence.html#a3bfdc4890bb874d88887dd9e5ed0eb2f',1,'ProteinsSequence']]]
+  ['splitpeptides_48',['splitPeptides',['../classFFP_1_1Types_1_1Protein.html#acd6819e0c7718af11a18ab21cf33180b',1,'FFP::Types::Protein']]]
 ];

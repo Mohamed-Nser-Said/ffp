@@ -1,5 +1,9 @@
 var annotated_dup =
 [
-    [ "Peptide", "structPeptide.html", "structPeptide" ],
-    [ "ProteinsSequence", "classProteinsSequence.html", "classProteinsSequence" ]
+    [ "FFP", "namespaceFFP.html", [
+      [ "Types", "namespaceFFP_1_1Types.html", [
+        [ "Peptide", "structFFP_1_1Types_1_1Peptide.html", "structFFP_1_1Types_1_1Peptide" ],
+        [ "Protein", "classFFP_1_1Types_1_1Protein.html", "classFFP_1_1Types_1_1Protein" ]
+      ] ]
+    ] ]
 ];
